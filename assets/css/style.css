@@ -170,18 +170,18 @@ p {
      margin: 0 auto;
 }
 .block {
+     position: relative;
      width:250px;
      height:215px;
      margin: 20px 15px;
-     border:2px solid transparent;
-}
-.block:hover {
-     border-color: blue;
+     border: none;
+     border: 2px solid transparent;
 }
 
  .block p {
-    
-     margin-top: 125px;
+     position: absolute;
+     width: 100%;
+     bottom: 0;
      background: #4aaaa5;
      color: #fff;
      line-height: 65px;
@@ -221,12 +221,8 @@ p {
 }
 
 .mainsection td {
-     height: 100%;
-     position:relative
-
-}
-.mainsection a {
-    /* height: 100%;*/
+    /* height: 100%;
+     position:relative*/
 }
  td:first-child .block {
      margin-left: 0px;
@@ -234,14 +230,15 @@ p {
  td:nth-child(2) .block {
      margin-right: 0px;
 }
- a:link {
+ .block:link {
      color: #06e;
 }
- a:visited {
+ .block:visited {
      color: #551a8b;
 }
- a:hover {
+ .block:hover {
      text-decoration: none;
+     border: 2px solid blue;
 }
  nav a:link {
      color: #777777;
