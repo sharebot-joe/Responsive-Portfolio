@@ -2,4 +2,4 @@
 
 A responsive version of my portfolio!
 
-<img src="assets/images/screenshot.jpg" alt="alt text" width="500">
+<img src="assets/images/screenshot.JPG" alt="alt text" width="500">
