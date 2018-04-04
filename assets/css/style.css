@@ -184,7 +184,7 @@ p {
      bottom: 0;
      background: #4aaaa5;
      color: #fff;
-     line-height: 65px;
+     line-height: 55px;
      font-size: 1.3em;
      text-align: center;
      font-family: 'Georgia', Times, Times New Roman, serif;
@@ -196,8 +196,9 @@ p {
 
 .hangman {
     /*background-image: url('assets/images/hangman.jpg');*/
-     background: url('../images/hangman.jpg');
+     background: url('../images/supersmashmario.png');
      background-size: cover;
+     background-color: #a9a9a9;
 }
 .trivia {
     /*background-image: url('assets/images/hangman.jpg');*/
