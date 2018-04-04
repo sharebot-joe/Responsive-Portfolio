@@ -175,7 +175,7 @@ p {
      height:215px;
      margin: 20px 15px;
      border: none;
-     border: 2px solid transparent;
+     border: 2px solid #d3d3d3;
 }
 
  .block p {
@@ -195,30 +195,18 @@ p {
 }
 
 .hangman {
-    /*background-image: url('assets/images/hangman.jpg');*/
      background: url('../images/supersmashmario.png');
      background-size: cover;
      background-color: #a9a9a9;
 }
 .trivia {
-    /*background-image: url('assets/images/hangman.jpg');*/
      background: url('../images/squatch.jpg');
      background-size: cover;
 }
-.rpg {
-    /*background-image: url('assets/images/hangman.jpg');*/
-     background: url('../images/rpg.jpg');
+.crystals {
+     background: url('../images/blue.png');
      background-size: cover;
-}
-.rutgers {
-    /*background-image: url('assets/images/hangman.jpg');*/
-     background: url('../images/rutgers.jpg');
-     background-size: cover;
-}
-.rps {
-    /*background-image: url('assets/images/hangman.jpg');*/
-     background: url('../images/rock.jpg');
-     background-size: cover;
+     background-position: center center;
 }
 
 .mainsection td {
