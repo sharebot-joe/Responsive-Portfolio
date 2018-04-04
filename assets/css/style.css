@@ -2,30 +2,30 @@
 * {
      box-sizing: border-box;
 }
-html, body {
+ html, body {
      height: 100%;
 }
-body {
+ body {
      background: url(../../assets/images/graybgtexture.jpeg) center center/cover;
      background-attachment: fixed;
 }
-a, p {
+ a, p {
      color: #777777;
      font-family:'Arial', 'Helvetica Neue', Helvetica, sans-serif;
      text-decoration: none;
 }
 p {
-     margin-top: 16px;
-     margin-bottom: 16px;
+     display: block;
+     -webkit-margin-before: 0px;
+    -webkit-margin-after: 0px;
 }
-
-.wrapper {
+ .wrapper {
      height: auto !important;
      height: 100%;
      min-height: 100%;
      margin: 0 auto;
 }
-#headerbar {
+ #headerbar {
      position: fixed;
      z-index: 99;
      width: 100%;
@@ -42,7 +42,7 @@ p {
      padding-left: 0;
      padding-right: 0;
 }
-#myname {
+ #myname {
      float: left;
      width: 250px;
      height: 80px;
@@ -55,12 +55,12 @@ p {
      font-weight: bold;
      font-family: 'Georgia', Times, Times New Roman, serif;
 }
-.innercontainer {
+ .innercontainer {
      width: 100%;
      max-width: 960px;
      margin: 0 auto;
 }
-.container {
+ .container {
      position: relative;
      width: 100%;
      overflow: hidden;
@@ -68,51 +68,48 @@ p {
      padding: 120px 0 240px;
      margin: 0 auto;
 }
-.mainsection {
+ .mainsection {
      float: left;
      width: 650px;
      background: #fff;
      padding: 10px 30px 30px;
      border: 1px solid #dddddd;
 }
-.mainsection h1 {
+ .mainsection h1 {
      font-size: 2em;
      font-weight: bold;
      font-family: 'Georgia', Times, Times New Roman, serif;
      color: #4aaaa5;
      line-height: 65px;
 }
-.mainsection p {
+ .mainsection p {
+     margin: 12px 0;
      line-height: 1.5;
      color: #777777;
      font-family:'Arial', 'Helvetica Neue', Helvetica, sans-serif;
      text-decoration: none;
 }
-.mainsection #mypic {
-     margin-top: 20px;
-     margin-bottom: 20px;
-}
-.sidebar {
+ .sidebar {
      float: right;
      width: 270px;
      background: #fff;
      padding: 10px 25px;
      border: 1px solid #dddddd;
 }
-.sidebar ul {
+ .sidebar ul {
      padding: 10px;
 }
-.sidebar li {
+ .sidebar li {
      display: inline-block;
 }
-.sidebar h2 {
+ .sidebar h2 {
      font-size: 1.4em;
      font-weight: bold;
      font-family: 'Georgia', Times, Times New Roman, serif;
      color: #4aaaa5;
      line-height: 50px;
 }
-footer {
+ footer {
      position: fixed;
      bottom: 0;
      width: 100%;
@@ -120,33 +117,33 @@ footer {
      text-align: center;
      border-top: 8px solid #4aaaa5 !important;
 }
-footer p {
+ footer p {
      font-size: 12px;
      color: #ccc;
      line-height: 90px;
      font-family:'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 }
-nav {
+ nav {
      float: right;
-     /*display: inline;
-     bottom: 80px;*/
-     /*background: #fff;*/
+     display: inline;
+     bottom: 80px;
+     background: #fff;
 }
-nav li{
+ nav li{
      padding: 0 20px;
-     /*border-right: 1px solid gray;*/
- /*    line-height: 80px;
-     display: inline;*/
+     border-right: 1px solid gray;
+     line-height: 80px;
+     display: inline;
 }
-nav li:last-child {
+ nav li:last-child {
      border-right: none;
 }
-form {
+ form {
      padding-top: 20px;
      color: #777777;
      font-family:'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 }
-form input[type=text] {
+ form input[type=text] {
      width: 100%;
      border: 1px solid rgb(144, 144, 144);
      border: 1px solid rgba(144, 144, 144, .3);
@@ -154,13 +151,13 @@ form input[type=text] {
      margin: 10px 0;
      color: #a9a9a9;
 }
-textarea {
+ textarea {
      width: 100%;
      padding: 10px;
      height: 250px;
      margin: 10px 0;
 }
-input[type=submit] {
+ input[type=submit] {
      padding:10px 30px;
      margin-top: 10px;
      background:#4aaaa5;
@@ -169,102 +166,87 @@ input[type=submit] {
      color: #fff;
      font-size: 16px;
 }
-table {
+ table {
      margin: 0 auto;
 }
 .block {
-     width: 100%;
      position: relative;
-     margin: 0 auto;
-     border:2px solid transparent;
-}
-td {
-     padding: 20px 0;
-}
-td:first-child {
-     padding-right: 15px;
-}
-td:nth-child(2) {
-     padding-left: 15px;
-}
-.block:hover {
-     border-color: blue;
+     width:250px;
+     height:215px;
+     margin: 20px 15px;
+     border: none;
+     border: 2px solid transparent;
 }
 
-.block p {
+ .block p {
      position: absolute;
-     width:100%;
-     bottom: 10px;
-     margin: 0;
+     width: 100%;
+     bottom: 0;
      background: #4aaaa5;
      color: #fff;
-     line-height: 65px;
+     line-height: 55px;
      font-size: 1.3em;
      text-align: center;
      font-family: 'Georgia', Times, Times New Roman, serif;
 }
 .block img {
      max-width: 100%;
+     max-height: 215px;
 }
 
-a:link {
+.hangman {
+    /*background-image: url('assets/images/hangman.jpg');*/
+     background: url('../images/supersmashmario.png');
+     background-size: cover;
+     background-color: #a9a9a9;
+}
+.trivia {
+    /*background-image: url('assets/images/hangman.jpg');*/
+     background: url('../images/squatch.jpg');
+     background-size: cover;
+}
+.rpg {
+    /*background-image: url('assets/images/hangman.jpg');*/
+     background: url('../images/rpg.jpg');
+     background-size: cover;
+}
+.rutgers {
+    /*background-image: url('assets/images/hangman.jpg');*/
+     background: url('../images/rutgers.jpg');
+     background-size: cover;
+}
+.rps {
+    /*background-image: url('assets/images/hangman.jpg');*/
+     background: url('../images/rock.jpg');
+     background-size: cover;
+}
+
+.mainsection td {
+    /* height: 100%;
+     position:relative*/
+}
+ td:first-child .block {
+     margin-left: 0px;
+}
+ td:nth-child(2) .block {
+     margin-right: 0px;
+}
+ .block:link {
      color: #06e;
 }
-a:visited {
+ .block:visited {
      color: #551a8b;
 }
-a:hover {
-     text-decoration: underline;
+ .block:hover {
+     text-decoration: none;
+     border: 2px solid blue;
 }
-nav a:link {
+ nav a:link {
      color: #777777;
 }
 /*****@Media Queries*****/
 
-@media screen and (min-width: 768px) and (max-width : 980px) {  
-     nav li {
-          display: inline-block;
-          width: 120px;
-          height: 80px;
-          line-height: 80px;
-     }
-     .navlinks li:nth-child(3) a {
-          border-right: none;
-     }
-     .navbarlogo {
-          width: 100%;
-          text-align: center;
-     }
-     .navlinks {
-          text-align: center;
-          overflow: auto;
-     }
-     .navlinks a {
-          display: inline-block;
-          height: 20px;
-          line-height: 20px;
-          border-right: 1px solid gray;
-          vertical-align:middle;
-     }
-     /*nav li {
-          float: left;
-          height: 80px;
-          line-height: 80px;
-          vertical-align: middle;
-          width: 33%;
-          padding: 0;
-     }
-     
-     .navlinks a {
-          display: inline-block;
-          height: 100px;
-          width: 100%;
-          height: 20px;
-          line-height: 20px;
-          border-right: 1px solid gray;
-          vertical-align:middle;
-     }
-     */
+@media screen and (min-width: 768px) and (max-width : 980px) {   
      .mainsection {
           float: none;
           display: block;
@@ -289,7 +271,7 @@ nav a:link {
           padding-left: 15px;
      }
 }
-@media screen and (min-width: 640px) and (max-width : 768px) {
+@media screen and (max-width : 768px) {
      #headerbar {
           position: static;
      }
@@ -301,32 +283,7 @@ nav a:link {
           width: 100%;
      }
      nav li {
-          float: left;
-          height: 80px;
-          line-height: 80px;
-          vertical-align: middle;
-          width: 33%;
-          padding: 0;
-     }
-     .navlinks {
-          text-align: center;
-          overflow: auto;
-     }
-     .navlinks a {
-          display: inline-block;
-          height: 100px;
-          width: 100%;
-          height: 20px;
-          line-height: 20px;
-          border-right: 1px solid gray;
-          vertical-align:middle;
-     }
-     .navlinks li:nth-child(3) a {
-          border-right: none;
-     }
-     .navbarlogo {
-          width: 100%;
-          text-align: center;
+          line-height: 18px;
      }
      .container {
           padding-top: 0;
@@ -342,74 +299,26 @@ nav a:link {
           width: auto;
           margin: 30px 30px 20px;
      }
-     .block {
-          margin: 0 auto;
-     }
-     td {
-          width: 100%;
-          display: block;
-          padding: 20px 0;
-     }
-     td:first-child {
-          padding-right: 0px;
-     }
-     td:nth-child(2) {
-          padding-left: 0px;
-     }
-}
-@media screen and (max-width : 640px) {
-     #headerbar {
-          position: static;
-     }
-     #myname {
-          width: 100%;
-     }
-
-     nav {
-          width: 100%;
-     }
-     nav li {
-          float: left;
-          height: 80px;
-          line-height: 80px;
-          vertical-align: middle;
-          width: 33%;
-          padding: 0;
-     }
      .navlinks {
+          float: right;
+          margin: 0;
+          width: 100%;
+          height: 80px;
           text-align: center;
-          overflow: auto;
+     }
+     .navlinks li {
+          position: relative;
+          float: left;
+          top: 25px;
+          width: 33%;
      }
      .navlinks a {
-          display: inline-block;
-          height: 100px;
-          width: 100%;
-          height: 20px;
-          line-height: 20px;
-          border-right: 1px solid gray;
-          vertical-align:middle;
-     }
-     .navlinks li:nth-child(3) a {
-          border-right: none;
+          vertical-align: middle;
      }
      .navbarlogo {
           width: 100%;
           text-align: center;
      }
-     .container {
-          padding-top: 0;
-     }
-     .mainsection {
-          float: none;
-          width: auto;
-          margin-top: 85px;
-          margin: 30px 30px 20px;
-     }
-     .sidebar {
-          float: none;
-          width: auto;
-          margin: 30px 30px 20px;
-     }
      .block {
           margin: 0 auto;
      }
@@ -417,11 +326,5 @@ nav a:link {
           width: 100%;
           display: block;
           padding: 20px 0;
-     }
-     td:first-child {
-          padding-right: 0px;
-     }
-     td:nth-child(2) {
-          padding-left: 0px;
      }
 }
